@@ -11,4 +11,4 @@ function ComA() {
   );
 }
 
-export default ComA;
+export default ComA; 

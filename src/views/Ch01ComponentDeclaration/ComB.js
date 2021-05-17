@@ -11,8 +11,8 @@ class ComB extends React.Component {
             content...
         </div>
       </div>
-    );
+    ); 
   }
 }
 
-export default ComB;
+export default ComB; 

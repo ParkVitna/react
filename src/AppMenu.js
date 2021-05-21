@@ -23,6 +23,11 @@ function AppMenu() {
         <Link to="/ch02/exam07" className="nav-link text-warning">Exam07Repeat</Link>
         <Link to="/ch02/exam08" className="nav-link text-warning">Exam08Ref</Link>
       </li>
+      <li className="nav-item mt-3">
+        <h6 className="text-white">Ch03. Props and State</h6>
+        <Link to="/ch03/exam01" className="nav-link text-warning">Exam01Props</Link>
+        <Link to="/ch03/exam02" className="nav-link text-warning">Exam02State</Link>
+      </li>
     </ul>
   );
 };

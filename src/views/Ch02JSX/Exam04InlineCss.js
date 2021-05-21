@@ -1,4 +1,4 @@
-function Exam04InlineCss() {
+function Exam04InlineCss(props) {
   const name = "React";
   const mystyle = {
     backgroundColor:"black", 

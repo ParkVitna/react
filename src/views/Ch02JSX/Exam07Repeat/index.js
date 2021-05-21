@@ -2,7 +2,7 @@ import ComA from "./ComA";
 import ComB from "./ComB";
 import ComC from "./ComC";
 
-function Exam07Repeat() {
+function Exam07Repeat(props) {
   return (
     <div className="card">
       <div className="card-header">

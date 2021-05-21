@@ -1,4 +1,4 @@
-function ComA() {
+function ComA(props) {
   return (
     <div className="card">
       <div className="card-header">

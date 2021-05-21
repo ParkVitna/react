@@ -2,7 +2,7 @@ function fun() {
   return "동작";
 }
 
-function Exam02Expressions() {
+function Exam02Expressions(props) {
   const name = "리액트";
   return(
     <div className="card">

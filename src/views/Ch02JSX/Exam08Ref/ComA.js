@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-function ComA() {
+function ComA(props) {
   const inputRef = useRef();
   const divRef = useRef();
 

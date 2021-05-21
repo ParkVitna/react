@@ -1,4 +1,4 @@
-function Home() {
+function Home(props) {
   return (
     <div className="card">
       <div className="card-header">

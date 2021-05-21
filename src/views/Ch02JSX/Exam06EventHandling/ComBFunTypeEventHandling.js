@@ -1,4 +1,4 @@
-function ComBFunTypeEventHandling() {
+function ComBFunTypeEventHandling(props) {
   const handleBtn1 = (event) => {
     console.log("버튼1이 클릭되었습니다.");
     console.log(event.target.name);

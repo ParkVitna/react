@@ -1,4 +1,4 @@
-function ComA() {
+function ComA(props) {
   const items = ["눈사람", "얼음", "눈", "바람", "얼음"];
   return (
     <div className="card">

@@ -52,8 +52,8 @@ function ComCFun(props) {
     
         setJoinForm(prevJoinForm => {
           return {
-            ...joinForm,
-            uskill: joinForm.uskill.filter(item => item !== event.target.value)
+            ...prevJoinForm,
+            uskill: prevJoinForm.uskill.filter(item => item !== event.target.value)
           };
         });
       }

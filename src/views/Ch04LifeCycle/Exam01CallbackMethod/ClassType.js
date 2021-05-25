@@ -8,7 +8,15 @@ class ClassType extends React.Component{
       number: 0
     };
     console.log("constructor() 실행");
+    this.handleIncrement = this.handleIncrement.bind(this);
   }
+
+  handleIncrement(event) {
+    this.setState({
+      ...this.state,
+      number: this.state.number + 1
+    });
+  };
 
   static getDerivedStateFromProps(props, prevState) {
     console.group("getDerivedStateFromProps() 실행");
@@ -47,7 +55,8 @@ class ClassType extends React.Component{
           ClassType
         </div>
         <div className="card-body">
-          number: {this.state.number}
+          <div>number: {this.state.number}</div>
+          <button className="btn btn-info btn-sm mt-2" onClick={this.handleIncrement}>증가</button>
         </div>
       </div>
     );

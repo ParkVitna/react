@@ -33,7 +33,18 @@ function AppMenu() {
       </li>
       <li className="nav-item mt-3">
         <h6 className="text-white">Ch04. LifeCycle</h6>
-        <Link to="/ch04/exam01" className="nav-link text-warning">Exam01WhenMount</Link>
+        <Link to="/ch04/exam01" className="nav-link text-warning">Exam01CallbackMethod</Link>
+        <Link to="/ch04/exam02" className="nav-link text-warning">Exam02UseEffect</Link>
+      </li>
+      <li className="nav-item mt-3">
+        <h6 className="text-white">Ch05. Style</h6>
+        <Link to="/ch05/exam01" className="nav-link text-warning">Exam01Css</Link>
+        <Link to="/ch05/exam02" className="nav-link text-warning">Exam02Sass</Link>
+        <Link to="/ch05/exam03" className="nav-link text-warning">Exam03StyledComponent</Link>
+      </li>
+      <li className="nav-item mt-3">
+        <h6 className="text-white">Ch06. Route</h6>
+        <Link to="/ch06" className="nav-link text-warning">BoardTable</Link>
       </li>
     </ul>
   );

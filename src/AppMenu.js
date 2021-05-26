@@ -46,6 +46,12 @@ function AppMenu() {
         <h6 className="text-white">Ch06. Route</h6>
         <Link to="/ch06" className="nav-link text-warning">BoardTable</Link>
       </li>
+      <li className="nav-item mt-3">
+        <h6 className="text-white">Ch07. Performance Improvement</h6>
+        <Link to="/ch07/exam01" className="nav-link text-warning">Exam01UseMemo</Link>
+        <Link to="/ch07/exam02" className="nav-link text-warning">Exam02UseCallback</Link>
+        <Link to="/ch07/exam03" className="nav-link text-warning">Exam03SetterFunArg</Link>
+      </li>
     </ul>
   );
 };

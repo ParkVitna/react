@@ -5,6 +5,7 @@ import Ch03PropsAndState from "views/Ch03PropsAndState";
 import Ch04LifeCycle from "views/Ch04LifeCycle";
 import Ch05Style from "views/Ch05Style";
 import Ch06Route from "views/Ch06Route";
+import Ch07PerformanceImprovement from "views/Ch07PerformanceImprovement";
 import Home from "views/Home";
 
 function AppRoute() {
@@ -17,6 +18,7 @@ function AppRoute() {
       <Route path="/ch04" component={Ch04LifeCycle}/>
       <Route path="/ch05" component={Ch05Style}/>
       <Route path="/ch06" component={Ch06Route}/>
+      <Route path="/ch07" component={Ch07PerformanceImprovement}/>
       <Redirect to="/"/>
     </Switch>
   );

@@ -11,8 +11,10 @@ import { createStore } from "redux";
 import rootReducer from "redux/root-reducer";
 import { Provider } from "react-redux";
 
+import { composeWithDevTools } from "redux-devtools-extension";
+
 //rootReducer는 모든 리듀서를 합친 하나의 리듀서, 따라서 store는 모든 리듀서가 관리하는 상태를 총괄하는 객체
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, composeWithDevTools());
 
 ReactDOM.render(
   // <React.StrictMode>

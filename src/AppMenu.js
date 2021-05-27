@@ -51,6 +51,15 @@ function AppMenu() {
         <Link to="/ch07/exam01" className="nav-link text-warning">Exam01UseMemo</Link>
         <Link to="/ch07/exam02" className="nav-link text-warning">Exam02UseCallback</Link>
         <Link to="/ch07/exam03" className="nav-link text-warning">Exam03SetterFunArg</Link>
+        <Link to="/ch07/exam04" className="nav-link text-warning">Exam04ReactMemo</Link>
+        <Link to="/ch07/exam05" className="nav-link text-warning">Exam05ListWithScroll</Link>
+      </li>
+      <li className="nav-item mt-3">
+        <h6 className="text-white">Ch08. Global State</h6>
+        <Link to="/ch08/exam01" className="nav-link text-warning">Exam01ColorContext</Link>
+        <Link to="/ch08/exam02" className="nav-link text-warning">Exam02AppContext</Link>
+        <Link to="/ch08/exam03" className="nav-link text-warning">Exam03ColorRedux</Link>
+        <Link to="/ch08/exam04" className="nav-link text-warning">Exam04AuthRedux</Link>
       </li>
     </ul>
   );

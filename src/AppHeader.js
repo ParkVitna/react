@@ -1,7 +1,22 @@
+import AppContext from "AppContext";
+import { useContext } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { createSetUidAction } from "redux/auth-reducer";
 
 
-function AppHeader() {
+function AppHeader(props) {
+  const appContext = useContext(AppContext);
+
+  //리덕스에서 얻어내기
+  const globalUid = useSelector((state) => state.authReducer.uid);
+  const dispatch = useDispatch();
+
+  const logout = (event) => {
+    appContext.setUid("");
+    dispatch(createSetUidAction(""));
+  };
+
   return (
     <nav className="navbar bg-dark navbar-dark text-white font-weight-bold 
     justify-content-between">
@@ -11,7 +26,14 @@ function AppHeader() {
     {' '} React
     </Link>
     <div>
-    <Link to="/" className="btn btn-success btn-sm">로그인</Link>
+      {appContext.uid === "" &&  globalUid === "" ? 
+        <Link to="/ch08/exam02" className="btn btn-success btn-sm">로그인</Link>
+        :
+        <div className="d-flex align-items-center">
+          <span className="mr-2">User ID: {appContext.uid || globalUid}</span>
+          <button className="btn btn-success btn-sm" onClick={logout}>로그아웃</button>
+        </div>
+      }
     </div>
     </nav>
   );

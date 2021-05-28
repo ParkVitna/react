@@ -61,6 +61,10 @@ function AppMenu() {
         <Link to="/ch08/exam03" className="nav-link text-warning">Exam03ColorRedux</Link>
         <Link to="/ch08/exam04" className="nav-link text-warning">Exam04AuthRedux</Link>
       </li>
+      <li className="nav-item mt-3">
+        <h6 className="text-white">Ch09. Ajax</h6>
+        <Link to="/ch09/exam01" className="nav-link text-warning">Exam01AsyncControl</Link>
+      </li>
     </ul>
   );
 };

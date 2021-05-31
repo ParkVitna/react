@@ -30,10 +30,14 @@ function BoardUpdateForm(props) {
   };
 
   const handleUpdate = async (event) => {
-    event.preventDefault();
-    const dirtyBoard = {...board}; //복사해서 넣기
-    await updateBoard(dirtyBoard);
-    props.history.goBack(); //BoardRead로 돌아가기
+    try {
+      event.preventDefault();
+      const dirtyBoard = {...board}; //복사해서 넣기
+      await updateBoard(dirtyBoard);
+      props.history.goBack(); //BoardRead로 돌아가기
+    } catch(error) {
+      console.log(error);
+    }
   };
 
   const handleCancel = (event) => {

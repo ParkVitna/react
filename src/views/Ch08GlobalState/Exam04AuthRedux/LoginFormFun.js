@@ -13,7 +13,8 @@ function LoginFormFun(props) {
   const dispatch = useDispatch();
 
   const login = (event) => {
-    dispatch(createSetUidAction(uid));
+    dispatch(createSetUidAction(uid)); //유지보수를 위해 함수(액션 생성 함수)를 만들어 사용
+    //dispatch({type:"auth/setUid", uid}); //직접 만들 수도 있는데, 타입을 직접 타이핑 해버리면 오타로 오류날 수 있음
   };
 
   const logout = (event) => {

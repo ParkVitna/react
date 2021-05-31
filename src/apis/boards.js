@@ -13,9 +13,9 @@ export function createBoardNoAttach(board) {
   return promise;
 }
 
-//월요일에 설명해주실 부분
+//
 
-export function createBoard(multipartFormData) {
+export function createBoard(multipartFormData) { //formData가 들어옴
   return axios.post("/boards", multipartFormData); 
 }
 
@@ -32,5 +32,5 @@ export function updateBoard(board) {
 }
 
 export function downloadAttach(bno) {
-  return axios.get("/boards/battach/" + bno, {responseType: "blob"});
+  return axios.get("/boards/battach/" + bno, {responseType: "blob"}); //바이너리데이터 ~> axios의 경우에 이미지(첨부)파일에 반드시 써줘야함
 }

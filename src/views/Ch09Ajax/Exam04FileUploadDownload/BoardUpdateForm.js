@@ -41,7 +41,7 @@ function BoardUpdateForm(props) {
   };
 
   const handleCancel = (event) => {
-
+    props.history.goBack();
   };
 
   return (
